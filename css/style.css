@@ -1,0 +1,98 @@
+*{
+	font-family: Arial, Helvetica, sans-serif;
+}
+#menu_text{
+	background-color: #42f5c8;
+	text-align: center;
+	padding: 50px;
+	margin: 0;
+}
+nav{
+	background-color: #27354d;
+	overflow: hidden;
+	/*padding: 20px 20px;*/
+}
+nav a{
+	color:white;
+	padding: 15px 20px;
+	text-decoration: none;
+	display: block;
+	text-align: center;
+}
+nav a:hover{
+	color: black;
+	background-color: #d2d5d9;
+}
+nav a.menu_left{
+	float: left;
+}
+nav a.menu_right{
+	float: right;
+}
+footer{
+	text-align: center;
+	background-color: #27354d;
+	color: white;
+	padding: 15px 20px;
+	text-decoration: none;
+}
+footer a{
+	color: white;
+}
+.flex_container{
+	display: flex;
+	flex-wrap: nowrap;
+}
+.flex_left{
+	background-color: #e3dfde;
+	padding: 15px;
+	flex: 30%;
+}
+.flex_right{
+	padding: 15px;
+	flex: 70%;
+}
+#score_table {
+	border-collapse: collapse;
+}
+
+#score_table td, #score_table th {
+	border: 1px solid #ddd;
+	padding: 8px;
+	text-align: center;
+}
+
+#score_table tr:nth-child(even){background-color: #f2f2f2;}
+
+#score_table tr:hover {background-color: #ddd;}
+
+#score_table th {
+	padding-top: 12px;
+	padding-bottom: 12px;
+	text-align: left;
+	background-color: #04AA6D;
+	color: white;
+	text-align: center;
+}
+@media(max-width: 800px){
+	.flex_left{
+		flex: 100%;
+	}
+	.flex_right{
+		flex: 100%;
+	}
+	.flex_container{
+		flex-wrap: wrap;
+	}
+}
+@media(max-width: 400px){
+	.flex_left{
+		flex: 100%;
+	}
+	.flex_right{
+		flex: 100%;
+	}
+	.flex_container{
+		flex-wrap: wrap;
+	}
+}

@@ -52,6 +52,9 @@ footer a{
 	padding: 15px;
 	flex: 70%;
 }
+.flex_right a{
+	color: white;
+}
 #score_table {
 	border-collapse: collapse;
 }

@@ -54,6 +54,7 @@ footer a{
 }
 .flex_right a{
 	color: black;
+	text-decoration: underline;
 }
 #score_table {
 	border-collapse: collapse;

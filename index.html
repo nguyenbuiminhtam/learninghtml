@@ -15,6 +15,15 @@
 	'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
 	})(window,document,'script','dataLayer','GTM-NBHRJV5');</script>
 	<!-- End Google Tag Manager -->
+	<!-- Push event via GTM Data Layer -->
+	<script>
+		function viewProduct(){
+			dataLayer.push({event: 'viewProduct', productName: 'Shirt', productImage: 'https://www.rei.com/media/99379e7b-0e32-47dd-b3ff-6366acbf241c.jpg'})
+		};
+		function openPage(){
+		};
+	</script>
+	<!-- End push event via GTM Data Layer -->
 </head>
 <body>
 	<!-- Google Tag Manager (noscript) -->
@@ -80,7 +89,9 @@
 				</tr>
 			</table>
 			<h2 id="socialmedia">Social Media</h2>
-			<div>Facebook: <a href="https://www.facebook.com/tamnbm/">Nguyễn Bùi Minh Tâm</a></div>
+			<div>Facebook: <a href="https://www.facebook.com/tamnbm/">Nguyễn Bùi Minh Tâm</a></div><br><br>
+			<img src="https://www.rei.com/media/99379e7b-0e32-47dd-b3ff-6366acbf241c.jpg" alt="shirt"><br>
+			<button type="button" id="viewProduct" onclick="viewProduct(); openPage()">View Product</button>
 		</div>
 	</div>
 	<footer>
